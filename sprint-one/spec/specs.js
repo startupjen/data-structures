@@ -41,6 +41,8 @@ define([
       it('reports a size of 2 after adding two items', function() {
         stack.push('a');
         stack.push('b');
+        console.log(`variant is ${variant}`)
+        console.log(`stack is ${JSON.stringify(stack)}`)
         expect(stack.size()).to.equal(2);
       });
 
